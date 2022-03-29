@@ -1,0 +1,13 @@
+
+<div class="div" *ngFor="let alarms of datealarms; let i = index">
+  <div class="divL"><!--Left Div-->
+    <p class="hour"><b>{{alarms.hour}}</b></p>
+    <p class="desc"> <span class="material-icons">keyboard_arrow_down</span>{{alarms.description}}</p>
+  </div>
+  <div class="divR"> <!--Right Div-->
+    <p>Appareil:{{devices[i]}}</p>
+    <mat-icon>delete</mat-icon>
+  </div>
+</div>
+
+
